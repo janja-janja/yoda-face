@@ -97,7 +97,7 @@ module.exports = {
 
     connect : {
         options: {
-            port: 8030,
+            port: 2320,
             hostname: "*",
             keepalive: true,
             middleware: function (connect, options, middlewares) {
