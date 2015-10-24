@@ -1,0 +1,22 @@
+{
+  "name": "yoda-face",
+  "version": "0.1.0",
+  "description": "A face for my personal site",
+  "authors": [
+    "@yoda-yoda"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yoda",
+    "master",
+    "yoda-face"
+  ],
+  "homepage": "https://github.com/yoda-yoda/yoda-face",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
