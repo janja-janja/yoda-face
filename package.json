@@ -14,5 +14,8 @@
     "master",
     "yoda-face"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.6.5"
+  }
 }
