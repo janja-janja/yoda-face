@@ -1,0 +1,18 @@
+{
+  "author": "@yoda-yoda",
+  "name": "yoda-face",
+  "version": "0.1.0",
+  "description": "A face for my personal site",
+  "homepage": "https://github.com/yoda-yoda/yoda-face",
+  "bugs": "https://github.com/yoda-yoda/yoda-face/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@yoda:yoda-yoda/yoda-face.git"
+  },
+  "keywords": [
+    "yoda",
+    "master",
+    "yoda-face"
+  ],
+  "license": "MIT"
+}
