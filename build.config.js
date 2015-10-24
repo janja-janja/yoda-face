@@ -71,7 +71,16 @@ module.exports = {
         js: [
             "vendor/jquery/dist/jquery.js",
             "vendor/angular/angular.js",
-            "vendor/underscore/underscore.js"
+            "vendor/underscore/underscore.js",
+            "vendor/bootstrap/dist/js/bootstrap.js",
+            "vendor/angular-resource/angular-resource.js",
+            "vendor/angular-animate/angular-animate.js",
+            "vendor/angular-ui-router/release/angular-ui-router.js",
+            "vendor/angular-bootstrap/ui-bootstrap.js",
+            "vendor/angular-bootstrap/ui-bootstrap-tpls.js",
+            "vendor/js-data/dist/js-data.js",
+            "vendor/js-data-angular/dist/js-data-angular.js",
+            "vendor/js-data-schema/dist/js-data-schema.js"
         ],
         css: [
         ],
