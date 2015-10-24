@@ -4,3 +4,7 @@ build/
 bin/
 node_modules/
 vendor/
+lib-cov
+coverage
+npm-debug.log
+.DS_Store

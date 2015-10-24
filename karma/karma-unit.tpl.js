@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function ( karma ) {
   karma.set({
     /**
@@ -12,21 +14,45 @@ module.exports = function ( karma ) {
       <% scripts.forEach( function ( file ) { %>'<%= file %>',
       <% }); %>
       'src/**/*.js',
-      'src/**/*.coffee',
+      'src/app/common/tpls/*.tpl.html'
     ],
     exclude: [
       'src/assets/**/*.js'
     ],
-    frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-jasmine', 'karma-firefox-launcher', 'karma-coffee-preprocessor' ],
+    frameworks: [
+        'jasmine',
+        'sinon'
+
+    ],
+    plugins: [
+        'karma-jasmine',
+        'karma-sinon',
+        'karma-firefox-launcher',
+        'karma-phantomjs-launcher',
+        'karma-coverage',
+        'karma-threshold-reporter',
+        'karma-mocha-reporter',
+        'karma-ng-html2js-preprocessor'
+    ],
     preprocessors: {
-      '**/*.coffee': 'coffee',
+        'src/app/**/*.js': ['coverage'],
+        'src/app/common/tpls/*.tpl.html': ['ng-html2js'],
     },
 
     /**
      * How to report, by default.
      */
-    reporters: 'dots',
+    reporters: [
+        'progress',
+        'coverage',
+        'threshold',
+        'mocha'
+    ],
+
+    // reporter options
+    mochaReporter: {
+      output: 'autowatch'
+    },
 
     /**
      * On which port should the browser connect, on which port is the test runner
@@ -56,7 +82,29 @@ module.exports = function ( karma ) {
      */
     browsers: [
       'Firefox'
-    ]
+    ],
+
+    coverageReporter: {
+        dir: 'coverage/',
+        reporters: [
+            {
+                type: 'html',
+                subdir: 'html/'
+            },
+            {
+                type: 'text'
+            },
+            {
+                type: 'text-summary'
+            }
+        ]
+    },
+
+    thresholdReporter: {
+        statements: 100,
+        branches: 100,
+        lines: 100,
+        functions: 100
+    },
   });
 };
-
