@@ -2,9 +2,17 @@
 
 angular
 
-.module("yodApp", [
+.module("yoda", [
+    //  3rd party
+    "ui.router",
     "ui.bootstrap",
-    "js-data"
+    "templates-app",
+    "templates-common",
+
+    // my apps
+    "yoda.common",
+    "yoda.routes",
+    "yoda.config"
 ])
 
 .controller("yoda.controllers", [function () {
