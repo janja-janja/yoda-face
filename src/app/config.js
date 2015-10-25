@@ -4,6 +4,6 @@ angular
 
 .module("yoda.config", ["ui.router"])
 
-.config(["$urlRouterProvider", function ($urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
+.config(["$urlRouterProvider", function (yodaRouter) {
+    yodaRouter.otherwise("/");
 }]);
