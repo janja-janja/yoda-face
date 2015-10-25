@@ -3,7 +3,7 @@
 describe("Yoda App Unit Tests: ", function () {
     var scope, controller;
     beforeEach(function () {
-        module("yodApp");
+        module("yoda");
         inject(
             ["$rootScope", "$controller", function ($rootScope, $controller) {
                 scope = $rootScope.$new();
