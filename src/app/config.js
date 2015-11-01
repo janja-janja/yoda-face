@@ -4,7 +4,10 @@ angular
 
 .module("yoda.config", ["ui.router"])
 
-.config(["$urlRouterProvider", "$locationProvider", function (yodaRouter, loc) {
+.config(["$urlRouterProvider", function (yodaRouter) {
     yodaRouter.otherwise("/");
-    loc.html5Mode(true);
+}])
+
+.config(["$locationProvider", function (yodaLocation) {
+    yodaLocation.html5Mode(true);
 }]);
