@@ -6,4 +6,8 @@ angular
 
 .config(["$urlRouterProvider", function (yodaRouter) {
     yodaRouter.otherwise("/");
+}])
+
+.config(["$locationProvider", function (yodaLocation) {
+    yodaLocation.html5Mode(true);
 }]);
