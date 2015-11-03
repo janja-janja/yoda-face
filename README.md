@@ -16,4 +16,4 @@ $ grunt connect
 ```
 
 ## Credits
-Developed and maintained by [Deebeat City](http://karanja.co)
+Developed and maintained by [Karanja and daughters](http://karanja.co)
