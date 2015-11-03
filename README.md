@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/yoda-yoda/yoda-face.svg?style=svg&circle-token=768d363eebabba53264fcb24298be9e0393b27fe)](https://circleci.com/gh/yoda-yoda/yoda-face)
 
-A face to finally put on [yoda-yoda](http://188.166.80.59)
+A face to finally put on [yoda-yoda](http://karanja.co)
 
 ## How to run this project
 ### Clone from github
@@ -16,4 +16,4 @@ $ grunt connect
 ```
 
 ## Credits
-Developed and maintained by [Deebeat City](http://188.166.80.59)
+Developed and maintained by [Karanja and daughters](http://karanja.co)
