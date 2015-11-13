@@ -1,6 +1,6 @@
 "use strict";
 
-ddescribe("Unit Test for The Profile Service: ", function () {
+describe("Unit Test for The Profile Service: ", function () {
     var profileService;
 
     beforeEach(function () {
