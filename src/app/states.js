@@ -10,7 +10,8 @@ angular
             url: "/",
             views: {
                 "main@": {
-                    templateUrl: "common/tpls/content.tpl.html"
+                    templateUrl: "home/tpls/content.tpl.html",
+                    controller: "yoda.home.controllers.profile"
                 }
             }
         });

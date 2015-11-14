@@ -12,8 +12,6 @@ angular
     // my apps
     "yoda.common",
     "yoda.routes",
-    "yoda.config"
-])
-
-.controller("yoda.controllers", [function () {
-}]);
+    "yoda.config",
+    "yoda.home"
+]);
