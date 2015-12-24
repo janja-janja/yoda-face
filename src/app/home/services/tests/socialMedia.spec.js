@@ -21,13 +21,14 @@ describe("Unit Test for The Profile Service: ", function () {
     it("Should have 4 profiles defined", function () {
         var profile = profileService.profile();
 
-        expect(profile.length).toBe(4);
+        expect(profile.length).toBe(5);
     });
 
     it("Should link the profiles to the correct URLs", function () {
         var twitter = "https://twitter.com/dee_beat";
         var email = "mailto:dee.caranja@gmail.com";
         var github = "https://github.com/yoda-yoda";
+        var linkedin = "https://linkedin.com/in/karanja";
         var repo = "https://github.com/yoda-yoda/yoda-face.git";
 
         var profile = profileService.profile();
@@ -35,6 +36,7 @@ describe("Unit Test for The Profile Service: ", function () {
         expect(profile[0]).toEqual(twitter);
         expect(profile[1]).toEqual(email);
         expect(profile[2]).toEqual(github);
-        expect(profile[3]).toEqual(repo);
+        expect(profile[3]).toEqual(linkedin);
+        expect(profile[4]).toEqual(repo);
     });
 });
