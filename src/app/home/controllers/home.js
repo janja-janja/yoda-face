@@ -9,6 +9,7 @@ angular
         $scope.twitter = profile.profile()[0];
         $scope.email = profile.profile()[1];
         $scope.github = profile.profile()[2];
-        $scope.repo = profile.profile()[3];
+        $scope.linkedin = profile.profile()[3];
+        $scope.repo = profile.profile()[4];
     }
 ]);
